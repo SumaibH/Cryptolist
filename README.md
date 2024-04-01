@@ -1,6 +1,6 @@
 <p align="left">
-  <img border-radius:50% src="images/app_icon.png" alt="App Icon" width="200" height="200" >
-</p>
+  <img border-radius:50% src="images/app_icon.png" alt="App Icon" width="200" height="200" ></p>
+
 # CryptoList
 
 ## Fast access to all your crypto trades. Profit Tracker. Crypto Profit Calculator.
