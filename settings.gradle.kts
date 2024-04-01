@@ -15,6 +15,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CryptoList"
+rootProject.name = "Cryptolist"
 include(":app")
  
