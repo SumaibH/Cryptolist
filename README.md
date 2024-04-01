@@ -1,7 +1,7 @@
 # CryptoLoist
 
 <p align="center">
-  <img src="images/app_icon.png" alt="App Icon" width="100" style="border-radius: 20px;">
+  <img src="images/app_icon.png" alt="App Icon" width="250" height="250" style="border-radius: 20px;">
 </p>
 
 ## Fast access to all your crypto trades. Profit Tracker. Crypto Profit Calculator.
@@ -37,26 +37,24 @@ Now, we're thrilled to share our success with you and contribute to the thriving
 ## Featured Image:
 
 <p align="center">
-  <img src="images/featured_image.png" alt="Featured Image" width="400">
+  <img src="images/featured_image.png" alt="Featured Image" style="width: 100%;">
 </p>
 
 ## Screenshots:
 
-![Screenshot 1](images/screenshot1.png)
+<p align="center">
+  <img src="images/screenshot1.png" alt="Screenshot 1" width="200">
+  <img src="images/screenshot2.png" alt="Screenshot 2" width="200">
+  <img src="images/screenshot3.png" alt="Screenshot 3" width="200">
+  <img src="images/screenshot4.png" alt="Screenshot 4" width="200">
+</p>
 
-![Screenshot 2](images/screenshot2.png)
-
-![Screenshot 3](images/screenshot3.png)
-
-![Screenshot 4](images/screenshot4.png)
-
-![Screenshot 5](images/screenshot5.png)
-
-![Screenshot 6](images/screenshot6.png)
-
-![Screenshot 7](images/screenshot7.png)
-
-![Screenshot 8](images/screenshot8.png)
+<p align="center">
+  <img src="images/screenshot5.png" alt="Screenshot 5" width="200">
+  <img src="images/screenshot6.png" alt="Screenshot 6" width="200">
+  <img src="images/screenshot7.png" alt="Screenshot 7" width="200">
+  <img src="images/screenshot8.png" alt="Screenshot 8" width="200">
+</p>
 
 ---
 
