@@ -1,7 +1,7 @@
 # CryptoLoist
 
-<p align="center">
-  <img src="images/app_icon.png" alt="App Icon" width="250" height="250" style="border-radius: 20px;">
+<p align="left">
+  <img src="images/app_icon.png" alt="App Icon" width="250" height="250" style="border-radius: 100px;">
 </p>
 
 ## Fast access to all your crypto trades. Profit Tracker. Crypto Profit Calculator.
