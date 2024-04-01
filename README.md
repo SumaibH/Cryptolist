@@ -32,6 +32,20 @@ Built by a dedicated crypto day trader who turned losses into gains, this app is
 
 Now, we're thrilled to share our success with you and contribute to the thriving crypto community. Download our Crypto App today, take control of your trades, and elevate your trading experience to new heights. Start making profitable decisions with confidence!
 
+## Featured Image:
+
+![Featured Image](featured_image.png)
+
 ## Screenshots:
 
-![Screenshot 1](screenshot1.png) ![Screenshot 2](screenshot2.png) ![Screenshot 3](screenshot3.png)
+### Row 1:
+
+![Screenshot 1](screenshot1.png) ![Screenshot 2](screenshot2.png) ![Screenshot 3](screenshot3.png) ![Screenshot 4](screenshot4.png)
+
+### Row 2:
+
+![Screenshot 5](screenshot5.png) ![Screenshot 6](screenshot6.png) ![Screenshot 7](screenshot7.png) ![Screenshot 8](screenshot8.png)
+
+---
+
+© 2024 CryptoLoist. All rights reserved.
