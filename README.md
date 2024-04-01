@@ -1,6 +1,8 @@
 # CryptoLoist
 
-![App Icon](images/app_icon.png)
+<p align="center">
+  <img src="images/app_icon.png" alt="App Icon" width="100" style="border-radius: 20px;">
+</p>
 
 ## Fast access to all your crypto trades. Profit Tracker. Crypto Profit Calculator.
 
@@ -34,17 +36,27 @@ Now, we're thrilled to share our success with you and contribute to the thriving
 
 ## Featured Image:
 
-![Featured Image](images/featured_image.png)
+<p align="center">
+  <img src="images/featured_image.png" alt="Featured Image" width="400">
+</p>
 
 ## Screenshots:
 
-### Row 1:
+![Screenshot 1](images/screenshot1.png)
 
-![Screenshot 1](images/screenshot1.png) ![Screenshot 2](images/screenshot2.png) ![Screenshot 3](images/screenshot3.png) ![Screenshot 4](images/screenshot4.png)
+![Screenshot 2](images/screenshot2.png)
 
-### Row 2:
+![Screenshot 3](images/screenshot3.png)
 
-![Screenshot 5](images/screenshot5.png) ![Screenshot 6](images/screenshot6.png) ![Screenshot 7](images/screenshot7.png) ![Screenshot 8](images/screenshot8.png)
+![Screenshot 4](images/screenshot4.png)
+
+![Screenshot 5](images/screenshot5.png)
+
+![Screenshot 6](images/screenshot6.png)
+
+![Screenshot 7](images/screenshot7.png)
+
+![Screenshot 8](images/screenshot8.png)
 
 ---
 
