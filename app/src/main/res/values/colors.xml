@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="red">#DF0000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+
+    <!-- Primary colors -->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Text colors -->
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+
+    <!-- Background colors -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="windowBackground">#EEEEEE</color>
+
+    <!-- Button colors -->
+    <color name="buttonColor">#000000</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+
+    <!-- Divider color -->
+    <color name="dividerColor">#B6B6B6</color>
+
+    <!-- Color for the selected item -->
+    <color name="color1">#FFACAC</color>
+    <color name="color2">#D28989</color>
+    <color name="color3">#6D96A3</color>
+    <color name="color4">#A989D2</color>
+    <color name="color5">#B2D289</color>
+    <color name="color6">#89D2AF</color>
+    <color name="color7">#B44AB6</color>
+</resources>

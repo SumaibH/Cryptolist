@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    tools:context="com.tradetrack.cryptolist.activities.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_splash_bg"
+        android:scaleType="centerCrop"
+        android:alpha="0.3"/>
+    <ImageView
+        android:layout_above="@id/text"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_splash_icon" />
+
+    <ImageView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_above="@id/lottieAnimationView"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:src="@drawable/ic_splash_text" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginTop="-40dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/splash_anim"
+        app:lottie_loop="true"/>
+
+
+</RelativeLayout>

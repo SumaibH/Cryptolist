@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/white"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/_12sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_29sdp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_earnings"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_11sdp"
+                android:gravity="center_horizontal"
+                android:text="@string/earnings_details_of_selected_columns"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:strokeColor="@color/black"
+                    app:cardBackgroundColor="@color/black"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardCornerRadius="@dimen/_8sdp">
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buy Currency"
+                            android:textSize="@dimen/_10ssp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/textColorSecondary"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textViewBuyCurrency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColorSecondary"
+                            android:text="Sell Currency"
+                            android:textSize="@dimen/_10ssp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textViewAverageBuyPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColorSecondary"
+                            android:text="Average Buy Price"
+                            android:textSize="@dimen/_10ssp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textViewBuyPayments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColorSecondary"
+                            android:text="Buy Payments"
+                            android:textSize="@dimen/_10ssp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textViewSalePayments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColorSecondary"
+                            android:text="Sale Payments"
+                            android:textSize="@dimen/_10ssp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:id="@+id/textViewEarnings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColorSecondary"
+                            android:text="Earnings"
+                            android:textSize="@dimen/_10ssp"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:strokeColor="@color/windowBackground"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewSumBuyCurrency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00.0 BTC"
+                            android:textSize="@dimen/_11ssp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_9sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/windowBackground" />
+
+                        <TextView
+                            android:id="@+id/textViewSumSellCurrency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColor"
+                            android:text="00.0 BTC"
+                            android:textSize="@dimen/_11ssp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_9sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/windowBackground" />
+
+                        <TextView
+                            android:id="@+id/textViewBuyPriceAverage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColor"
+                            android:text="$0.0"
+                            android:textSize="@dimen/_11ssp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_9sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/windowBackground" />
+
+                        <TextView
+                            android:id="@+id/textViewSumBuyPayments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColor"
+                            android:text="$0.0"
+                            android:textSize="@dimen/_11ssp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_9sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/windowBackground" />
+
+                        <TextView
+                            android:id="@+id/textViewSumSalePayments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColor"
+                            android:text="$0.0"
+                            android:textSize="@dimen/_11ssp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_9sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/windowBackground" />
+
+                        <TextView
+                            android:id="@+id/textViewSumEarnings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textColor"
+                            android:text="$0.0"
+                            android:textSize="@dimen/_11ssp"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_9sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/btnDone"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:backgroundTint="@color/buttonColor"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_8sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Done"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

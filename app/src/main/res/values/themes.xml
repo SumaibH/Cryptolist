@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TradeTrack" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+
+    <color name="autoCompleteBackgroundTint">@color/cardview_light_background</color> <!-- Change this to your desired color for light theme -->
+    <style name="Theme.TradeTrack" parent="Base.Theme.TradeTrack" />
+
+    <color name="textColor">#000000</color>
+
+</resources>

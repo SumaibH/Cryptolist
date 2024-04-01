@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.tradetrack.cryptolist.activities.AddCurrencyActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:background="@drawable/top_round_corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_16sdp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_back"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/backarrow" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/add_currency"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/searchLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/layout_header"
+       android:layout_margin="@dimen/_13sdp"
+       android:background="@drawable/rounded_edittext_background">
+
+       <EditText
+           android:id="@+id/searchBar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingVertical="@dimen/_10sdp"
+           android:paddingHorizontal="@dimen/_15sdp"
+           android:hint="@string/search"
+           android:fontFamily="@font/montserrat_medium"
+           android:textSize="@dimen/_12sdp"
+           android:drawableEnd="@drawable/baseline_search_24"
+           android:background="@android:color/transparent"/>
+   </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchLayout"
+        android:id="@+id/titleHeader"
+        android:layout_marginHorizontal="@dimen/_13sdp"
+        android:weightSum="2"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/black"
+               android:weightSum="2"
+               android:background="@drawable/rounded_edittext_background">
+
+               <TextView
+                   android:id="@+id/titleName"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/white"
+                   android:gravity="center"
+                   android:text="@string/currency_name"
+                   android:textSize="@dimen/_8ssp"
+                   android:layout_weight="1"
+                   android:fontFamily="@font/montserrat_semi_bold"
+                   android:layout_gravity="center"
+                   android:layout_marginVertical="@dimen/_12sdp"/>
+
+               <View
+                   android:layout_width="1dp"
+                   android:layout_height="match_parent"
+                   android:background="@color/windowBackground" />
+
+
+               <TextView
+                   android:id="@+id/rate"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/white"
+                   android:gravity="center"
+                   android:text="@string/last_price_24hrs_ago"
+                   android:textSize="@dimen/_8ssp"
+                   android:layout_weight="1"
+                   android:fontFamily="@font/montserrat_semi_bold"
+                   android:layout_gravity="center"
+                   android:layout_marginVertical="@dimen/_12sdp"/>
+           </LinearLayout>
+
+           <ImageView
+               android:foreground="?selectableItemBackground"
+               android:id="@+id/refresh"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:padding="@dimen/_6sdp"
+               android:src="@drawable/ic_refresh"
+               app:tint="@color/white" />
+
+       </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/windowBackground"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="@dimen/_13sdp"
+        android:layout_below="@id/titleHeader"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <com.madapps.liquid.LiquidRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:AniBackColor="@color/white"
+            app:AniForeColor="@color/black"
+            app:CircleSmaller="6">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/currenciesRV"
+                tools:listitem="@layout/currency_item_view" />
+
+        </com.madapps.liquid.LiquidRefreshLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_12sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/_10sdp"
+        android:layout_centerInParent="true"
+        android:id="@+id/showProgress">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieAnimationView"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginBottom="-20dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/currency_anim"
+                app:lottie_loop="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fetching Live Rates"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#323232"
+    android:orientation="horizontal"
+    android:paddingHorizontal="16dp">
+
+    <ImageView
+        android:id="@+id/snackbar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="@color/white"
+        android:src="@drawable/baseline_wifi_off_24"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:layout_toEndOf="@id/snackbar_icon"
+        android:layout_centerVertical="true"
+        android:id="@+id/snackbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Snackbar Text"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/snackbar_retry_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RETRY"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:layout_gravity="center_vertical" />
+
+    </RelativeLayout>
