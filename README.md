@@ -1,8 +1,7 @@
-# CryptoLoist
-
 <p align="left">
-  <img border-radius:50% src="images/app_icon.png" alt="App Icon" width="250" height="250" >
-</p>
+  <img border-radius:50% src="images/app_icon.png" alt="App Icon" width="200" height="200" ></p>
+
+# CryptoList
 
 ## Fast access to all your crypto trades. Profit Tracker. Crypto Profit Calculator.
 
@@ -37,7 +36,7 @@ Now, we're thrilled to share our success with you and contribute to the thriving
 ## Featured Image:
 
 <p align="center">
-  <img src="images/featured_image.png" alt="Featured Image" style="width: 80%;">
+  <img src="images/featured_image.png" alt="Featured Image" style="width: 100%;">
 </p>
 
 ## Screenshots:
