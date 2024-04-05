@@ -75,7 +75,7 @@ public class CoinAdapter extends RecyclerView.Adapter<CoinAdapter.CoinViewHolder
             currencyIcon = itemView.findViewById(R.id.currencyIcon);
             parent = itemView.findViewById(R.id.parent);
 
-            bookmark.setOnClickListener(v -> {
+            parent.setOnClickListener(v -> {
                 if (bookmarkClickListener != null) {
                     bookmarkClickListener.onBookmarkClicked(getAdapterPosition());
                 }

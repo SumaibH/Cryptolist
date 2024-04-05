@@ -70,7 +70,8 @@
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/btnDelete"
-                android:background="?selectableItemBackground"
+                android:background="@drawable/button_bg_stroke"
+                android:foreground="?selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

@@ -1,6 +1,7 @@
 package com.tradetrack.cryptolist.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.splashscreen.SplashScreen;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,20 +16,23 @@ public class SplashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        hideNavigationBar();
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
-                startActivity(mainIntent);
-                finish();
-            }
-        }, SPLASH_TIMEOUT);
+            // Hide the navigation bar
+            hideNavigationBar();
+            splashScreen.setKeepOnScreenCondition(() -> true );
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
+                    startActivity(mainIntent);
+                    finish();
+                }
+            }, SPLASH_TIMEOUT);
     }
+
     private void hideNavigationBar() {
         // Hide the navigation bar
         // Expand the screen to full height by hiding both status bar and navigation bar

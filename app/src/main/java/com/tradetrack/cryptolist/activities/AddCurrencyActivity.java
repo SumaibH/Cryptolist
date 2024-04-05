@@ -173,11 +173,11 @@ public class AddCurrencyActivity extends AppCompatActivity {
                     String timeValue = sharedPrefs.getString("LastUpdated", "0");
                     String timeDifference = getTimeDifference(Long.parseLong(timeValue));
                     if (timeValue.equals("0")){
-                        binding.rate.setVisibility(View.INVISIBLE);
+                        binding.rate.setText("Currency Rates");
                     }else {
-                        binding.rate.setVisibility(View.VISIBLE);
+                        binding.rate.setText("Last Updated | " + timeDifference);
                     }
-                    binding.rate.setText("Last Updated | " + timeDifference);
+
                     handler.postDelayed(this, 1000);
                 }
             });

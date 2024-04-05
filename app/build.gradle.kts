@@ -10,8 +10,8 @@ android {
         applicationId = "com.tradetrack.cryptolist"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -60,8 +60,7 @@ dependencies {
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("com.airbnb.android:lottie:6.3.0")
-
-
+    implementation ("androidx.core:core-splashscreen:1.0.0-beta02")
 
 
 }

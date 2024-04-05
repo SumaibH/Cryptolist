@@ -16,10 +16,11 @@
         android:alpha="0.3"/>
     <ImageView
         android:layout_above="@id/text"
-        android:layout_width="wrap_content"
-        android:layout_marginStart="@dimen/_5sdp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_splash_icon" />
+        android:layout_width="@dimen/_100sdp"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/app_icon" />
 
     <ImageView
         android:id="@+id/text"

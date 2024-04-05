@@ -42,4 +42,16 @@
     <string name="please_connect_to_an_active_internet_connection">Please connect to an active internet connection</string>
     <string name="ooops_an_error_occurred">Ooops! An error occurred!</string>
     <string name="ooops_no_internet">Ooops... No Internet!</string>
+    <string name="fetching_live_rates">Fetching Live Rates</string>
+    <string name="refresh">refresh</string>
+    <string name="home">Home</string>
+    <string name="done">Done</string>
+    <string name="no_trades">No trades</string>
+    <string name="delete_currency">Delete Currency</string>
+    <string name="delete_trade">Delete Trade</string>
+    <string name="change_color">Change Color</string>
+    <string name="calculations">Calculations</string>
+    <string name="edit_sell_price">Edit Sell Price</string>
+    <string name="enter_new_price_here">Enter new price here</string>
+    <string name="new_value">New Value</string>
 </resources>

@@ -302,8 +302,8 @@
                     android:id="@+id/btnDone"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:background="?selectableItemBackground"
-                    android:backgroundTint="@color/buttonColor"
+                    android:background="@drawable/button_bg_stroke"
+                    android:foreground="?selectableItemBackground"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center_horizontal"
                     android:padding="@dimen/_8sdp">
@@ -311,7 +311,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Done"
+                        android:text="@string/done"
                         android:fontFamily="@font/montserrat_regular"
                         android:textColor="@color/black"
                         android:textSize="14sp" />

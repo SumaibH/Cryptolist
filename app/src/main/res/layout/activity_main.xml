@@ -47,36 +47,49 @@
                         android:id="@+id/home_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Home"
-                        android:paddingEnd="@dimen/_5sdp"
-                        android:paddingVertical="@dimen/_5sdp"
-                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/home"
+                        android:paddingVertical="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/_12sdp"
-                        android:textStyle="bold"/>
+                        android:textSize="@dimen/_14sdp" />
 
                     <ImageView
                         android:id="@+id/btn_done"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/ic_done"
-                        android:paddingStart="@dimen/_5sdp"
-                        android:paddingVertical="@dimen/_5sdp"
+                        android:padding="@dimen/_8sdp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        app:tint="@color/white" />
+                        app:tint="@color/white"
+                        android:contentDescription="@string/done" />
 
                 </RelativeLayout>
 
 
             </LinearLayout>
     </RelativeLayout>
-    <ImageView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_no_data"
-        android:layout_centerInParent="true"
-        android:id="@+id/noData"/>
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_no_data"
+            android:id="@+id/noData"
+            android:contentDescription="@string/no_trades" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_trades"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"/>
+    </LinearLayout>
 <!--    currencies layout-->
     <LinearLayout
         android:id="@+id/Currencies_layout_home"
@@ -99,10 +112,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:text="@string/currencies"
-                android:fontFamily="@font/montserrat_bold"
+                android:fontFamily="@font/montserrat_regular"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp"
-                android:textStyle="bold"/>
+                android:textSize="@dimen/_14sdp"/>
             <RelativeLayout
                     android:id="@+id/btn_delete_currency"
                     android:layout_width="wrap_content"
@@ -116,7 +128,8 @@
                     android:layout_width="@dimen/_15sdp"
                     android:layout_height="@dimen/_15sdp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/ic_trash" />
+                    android:src="@drawable/ic_trash"
+                    android:contentDescription="@string/delete_currency" />
                 </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/btn_new_currency"
@@ -132,7 +145,8 @@
                     android:layout_width="@dimen/_15sdp"
                     android:layout_height="@dimen/_15sdp"
                     android:layout_centerInParent="true"
-                    android:src="@drawable/ic_plus" />
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="@string/add_currency" />
             </RelativeLayout>
         </RelativeLayout>
         <LinearLayout
@@ -400,7 +414,8 @@
                                 android:layout_width="@dimen/_15sdp"
                                 android:layout_height="@dimen/_15sdp"
                                 android:layout_centerInParent="true"
-                                android:src="@drawable/ic_trash" />
+                                android:src="@drawable/ic_trash"
+                                android:contentDescription="@string/delete_trade" />
                         </RelativeLayout>
                         <RelativeLayout
                             android:id="@+id/btn_color_item"
@@ -409,11 +424,13 @@
                             android:layout_centerInParent="true"
                             android:background="@drawable/rounded_background"
                             android:padding="@dimen/_4sdp">
+
                             <ImageView
                                 android:layout_width="@dimen/_15sdp"
                                 android:layout_height="@dimen/_15sdp"
                                 android:layout_centerInParent="true"
-                                android:src="@drawable/ic_paint"/>
+                                android:src="@drawable/ic_paint"
+                                android:contentDescription="@string/change_color" />
                         </RelativeLayout>
                         <RelativeLayout
                             android:id="@+id/btn_calculate_item"
@@ -422,11 +439,13 @@
                             android:layout_alignParentEnd="true"
                             android:background="@drawable/rounded_background"
                             android:padding="@dimen/_4sdp">
+
                             <ImageView
                                 android:layout_width="@dimen/_15sdp"
                                 android:layout_height="@dimen/_15sdp"
                                 android:layout_centerInParent="true"
-                                android:src="@drawable/ic_sum"/>
+                                android:src="@drawable/ic_sum"
+                                android:contentDescription="@string/calculations" />
                         </RelativeLayout>
 
                     </RelativeLayout>
@@ -461,7 +480,8 @@
                     android:layout_height="@dimen/_15sdp"
                     android:layout_centerInParent="true"
                     android:src="@drawable/ic_data_currency"
-                    app:tint="@color/white" />
+                    app:tint="@color/white"
+                    android:contentDescription="@string/add_trade" />
             </RelativeLayout>
 
         </RelativeLayout>
@@ -502,7 +522,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:text="@string/live_price"
-                        android:fontFamily="@font/montserrat_medium"
+                        android:fontFamily="@font/montserrat_regular"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_12ssp"
                         android:textStyle="bold"/>
@@ -575,7 +595,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:text="@string/total_earning"
-                        android:fontFamily="@font/montserrat_medium"
+                        android:fontFamily="@font/montserrat_regular"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_12ssp"
                         android:textStyle="bold"/>
@@ -618,7 +638,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:text="@string/total_crypto"
-                        android:fontFamily="@font/montserrat_medium"
+                        android:fontFamily="@font/montserrat_regular"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_12ssp"
                         android:textStyle="bold"/>

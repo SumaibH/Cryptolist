@@ -10,6 +10,21 @@
     <color name="autoCompleteBackgroundTint">@color/cardview_light_background</color> <!-- Change this to your desired color for light theme -->
     <style name="Theme.TradeTrack" parent="Base.Theme.TradeTrack" />
 
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation
+        duration. -->
+        <item name="windowSplashScreenBackground">@color/black</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or an animated
+             drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/app_icon</item>
+        <!-- Required for animated icons. -->
+        <item name="windowSplashScreenAnimationDuration">300</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash
+        screen. This is required. -->
+        <item name="postSplashScreenTheme">@style/Theme.TradeTrack</item>
+    </style>
     <color name="textColor">#000000</color>
 
 </resources>
